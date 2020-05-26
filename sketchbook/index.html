@@ -1,104 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>kayfoart &mdash; sketchbook</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="sketchbook.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>kayfoart &mdash; sketchbook</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="sketchbook.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> -->
-</head>
-
-<body>
-
-  <nav class="nav">
-    <ul>
-      <li class="nav-item hello"><a href="../"><span>hello</span></a></li>
-
-      <li class="nav-item sketchbook selected"><span>sketchbook</span></li>
-      <li class="nav-item canvas"><a href="../canvas/"><span>canvas</span></a></li>
-      <li class="nav-item graphic"><a href="../graphic/"><span>graphic</span></a></li>
-      <li class="nav-item commission"><a href="../commission/"><span>commission</span></a></li>
-    </ul>
-  </nav>
-
-  <div class="hero">
-    <div class="hero-image-container">
-      <img src="imgs/giraffe.jpg" alt="sketch of a giraffe">
-      <div class="image-label image-label-hero">"Hello" | Pen on paper | 2017
-        <br>
-        <span class="label-comment">A personal fav.</span>
-      </div>
-    </div>
-  </div>
-
-  <main class="gallery-page">
-    <div class="gallery-container">
-
-      <div class="gallery-col">
-        <div class="gallery-item">
-          <img src="imgs/tiger.jpg" alt="tiger drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pencil | 2016</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/rhino1.jpg" alt="rhino drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">The last male northern white rhino, "Sudan" | Pencil | 2018</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/whale.jpg" alt="whale drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pen on paper | 2018</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/shell.jpg" alt="conch shell drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pen on paper | 2016</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/flamingo.jpg" alt="flamingo drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pen on paper | 2018</div>
-        </div>
-
-      </div>
-
-      <div class="gallery-col">
-        <div class="gallery-item">
-          <img src="imgs/polar.jpg" alt="polar bear drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pencil | 2015</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/jaws.jpg" alt="shark jaws drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pen on paper | 2016</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/dear.jpg" alt="deer drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pencil | 2015</div>
-        </div>
-        <div class="gallery-item">
-          <img src="imgs/horse1.jpg" alt="horse drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pen on paper | 2018</div>
-        </div>
-
-        <div class="gallery-item">
-          <img src="imgs/eagle.jpg" alt="eagle drawing" class="gallery-img">
-          <div class="image-label image-label-gallery">Pen on paper | 2018</div>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <footer class="footer">
-    <nav class="footer-nav">
+  <body>
+    <nav class="nav">
       <ul>
-        <li class="footer-nav-item"><a href="../info/"><span>info</span></a></li>
-        <li class="footer-sig"><img class="footer-image" src="../imgs/footer-sig.jpg" alt="kayfo"></li>
-        <!-- <li class="footer-nav-item"><a href="../contact/"><span>contact</span></a></li> -->
-        <li class="footer-nav-item"><a href="mailto:hello@kayfoart.com"><span>contact</span></a></li>
+        <li class="nav-item home">
+          <a href="../index.html"><span>kayfoart</span></a>
+        </li>
+
+        <li class="nav-item commission">
+          <a href="../commission/index.html"><span>commission</span></a>
+        </li>
+        <li class="nav-item sketchbook selected"><span>sketchbook</span></li>
+        <li class="nav-item canvas">
+          <a href="../canvas/index.html"><span>canvas</span></a>
+        </li>
+        <li class="nav-item digital">
+          <a href="../digital/index.html"><span>digital</span></a>
+        </li>
       </ul>
     </nav>
-  </footer>
 
-</body>
+    <div class="hero">
+      <div class="hero-image-container">
+        <img src="imgs/giraffe.jpg" alt="sketch of a giraffe" />
+        <div class="image-label image-label-hero">
+          "Hello" | Pen on paper | 2017
+          <br />
+          <span class="label-comment">A personal fav.</span>
+        </div>
+      </div>
+    </div>
 
+    <main class="gallery-page">
+      <div class="gallery-container">
+        <div class="gallery-col">
+          <div class="gallery-item">
+            <img src="imgs/tiger.jpg" alt="tiger drawing" class="gallery-img" />
+            <div class="image-label image-label-gallery">Pencil | 2016</div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/rhino1.jpg"
+              alt="rhino drawing"
+              class="gallery-img"
+            />
+            <div class="image-label image-label-gallery">
+              The last male northern white rhino, "Sudan" | Pencil | 2018
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/whale.jpg" alt="whale drawing" class="gallery-img" />
+            <div class="image-label image-label-gallery">
+              Pen on paper | 2018
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/shell.jpg"
+              alt="conch shell drawing"
+              class="gallery-img"
+            />
+            <div class="image-label image-label-gallery">
+              Pen on paper | 2016
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/flamingo.jpg"
+              alt="flamingo drawing"
+              class="gallery-img"
+            />
+            <div class="image-label image-label-gallery">
+              Pen on paper | 2018
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-col">
+          <div class="gallery-item">
+            <img
+              src="imgs/polar.jpg"
+              alt="polar bear drawing"
+              class="gallery-img"
+            />
+            <div class="image-label image-label-gallery">Pencil | 2015</div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/jaws.jpg"
+              alt="shark jaws drawing"
+              class="gallery-img"
+            />
+            <div class="image-label image-label-gallery">
+              Pen on paper | 2016
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="imgs/dear.jpg" alt="deer drawing" class="gallery-img" />
+            <div class="image-label image-label-gallery">Pencil | 2015</div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="imgs/horse1.jpg"
+              alt="horse drawing"
+              class="gallery-img"
+            />
+            <div class="image-label image-label-gallery">
+              Pen on paper | 2018
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="imgs/eagle.jpg" alt="eagle drawing" class="gallery-img" />
+            <div class="image-label image-label-gallery">
+              Pen on paper | 2018
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul>
+          <li class="footer-nav-item">
+            <a href="../info/index.html"><span>info</span></a>
+          </li>
+          <li class="footer-sig">
+            <img
+              class="footer-image"
+              src="../imgs/footer-sig.jpg"
+              alt="kayfo"
+            />
+          </li>
+          <!-- <li class="footer-nav-item"><a href="../contact/"><span>contact</span></a></li> -->
+          <li class="footer-nav-item">
+            <a href="mailto:hello@kayfoart.com"><span>contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

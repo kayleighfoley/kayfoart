@@ -1,29 +1,29 @@
 :root {
   /* FONTS */
-  --body-font: 'Source Sans Pro', sans-serif;
+  --body-font: "Source Sans Pro", sans-serif;
 
   /* COLORS */
   --sketchbook-color: #ffff00;
-  --canvas-color: #6D95E7;
-  --graphic-color : #EC4969;
-  --commission-color: #444C5C;
+  --canvas-color: #6d95e7;
+  --digital-color: #ec4969;
+  --commission-color: #444c5c;
   --home-color: #000;
 
-  --background-color: #F6F6F6;
+  --background-color: #f6f6f6;
   --white-color: #fff;
   --black-color: #000;
 
   /* STYLES */
-  --hero-image-box-shadow: 0 1em 2.5em rgba(0, 0, 0, .4);
-  --gallery-image-box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .4);
-  --gallery-image-hover-box-shadow: 0 1.5em 4em rgba(0, 0, 0, .3);
+  --hero-image-box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.4);
+  --gallery-image-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.4);
+  --gallery-image-hover-box-shadow: 0 1.5em 4em rgba(0, 0, 0, 0.3);
   --nav-box-shadow: 0 1.5em 4em var(--background-color);
   --footer-box-shadow: 0 -1.5em 4em var(--background-color);
 
   --nav-item-padding: 2rem 4rem;
   --footer-nav-item-padding: 2rem 4rem 3rem 4rem;
 
-  --nav-item-font-size: .8em;
+  --nav-item-font-size: 0.8em;
 }
 
 *,
@@ -49,8 +49,6 @@ ul {
   text-align: center;
 }
 
-
-
 .nav {
   width: 100%;
   position: fixed;
@@ -72,32 +70,49 @@ ul {
   color: var(--black-color);
 }
 
-.nav-item:not(.selected):hover { font-style: italic; }
+.nav-item:not(.selected):hover {
+  font-style: italic;
+}
 
 .home {
   background: var(--black-color);
   font-weight: bold;
 }
 
-.nav-item.home span { color: var(--white-color); }
+.nav-item.home span {
+  color: var(--white-color);
+}
+.nav-item.home:hover span {
+  text-decoration: underline;
+}
 
-.commission span:hover { background: var(--commission-color); }
-.canvas span:hover { background: var(--canvas-color); }
-.sketchbook span:hover { background: var(--sketchbook-color); }
-.graphic span:hover { background: var(--graphic-color); }
-.hello span:hover { background: var(--black-color); }
+.commission span:hover {
+  background: var(--commission-color);
+}
+.canvas span:hover {
+  background: var(--canvas-color);
+}
+.sketchbook span:hover {
+  background: var(--sketchbook-color);
+}
+.digital span:hover {
+  background: var(--digital-color);
+}
+.hello span:hover {
+  background: var(--black-color);
+}
 
 .commission:hover span,
 .canvas:hover span,
-.graphic:hover span,
+.digital:hover span,
 .hello:hover span {
   color: var(--white-color);
+  text-decoration: underline;
 }
-.sketchbook:hover span { color: var(--black-color); }
-
-
-
-
+.sketchbook:hover span {
+  color: var(--black-color);
+  text-decoration: underline;
+}
 
 /* FOOTER  */
 
@@ -122,6 +137,10 @@ ul {
   color: var(--black-color);
 }
 
+.footer-nav-item:hover span {
+  text-decoration: underline;
+}
+
 .footer-nav-item:not(.footer-selected):hover {
   font-style: italic;
 }
@@ -135,9 +154,6 @@ ul {
   display: inline-block;
   height: 3em;
 }
-
-
-
 
 /* ART PAGES (sketchbook, pencil, paint, digital, commission) */
 
@@ -161,11 +177,10 @@ ul {
   background: var(--commission-color);
   color: var(--white-color);
   display: inline-block;
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 1em;
   position: absolute;
-  opacity: 0;
-  transition: opacity .5s;
+  opacity: 0.9;
 }
 .image-label-hero {
   text-align: right;
@@ -175,9 +190,6 @@ ul {
 .label-comment {
   font-style: italic;
   color: #ccc;
-}
-.hero-image-container img:hover + .image-label-hero {
-  opacity: .9;
 }
 
 .gallery-page {
@@ -198,7 +210,7 @@ ul {
 }
 .gallery-item {
   margin-bottom: 3em;
-  transition: transform .2s;
+  transition: transform 0.2s;
   box-shadow: var(--gallery-image-box-shadow);
 
   position: relative;
@@ -216,10 +228,8 @@ ul {
   left: -1em;
 }
 .gallery-item:hover .image-label-gallery {
-  opacity: .9;
+  opacity: 0.9;
 }
-
-
 
 /* TEXT PAGES (info & contact) */
 
@@ -251,13 +261,12 @@ ul {
 }
 
 .social-link-dribbble a {
-  background: var(--graphic-color);
+  background: var(--digital-color);
 }
 
 .social-link-work a {
   background: var(--commission-color);
 }
-
 
 /* MEDIA QUERIES */
 
@@ -273,15 +282,15 @@ ul {
 
 @media (max-width: 900px) {
   .nav-item span {
-    padding: .5em 1em;
+    padding: 0.5em 1em;
   }
   .footer-nav-item {
-    padding: .5em 1em 1.5em 1em;
+    padding: 0.5em 1em 1.5em 1em;
   }
 
   .image-label {
     opacity: 1;
-    position:unset;
+    position: unset;
     display: block;
   }
 }
@@ -299,16 +308,16 @@ ul {
 }
 
 @media (max-width: 450px) {
-  .nav, 
+  .nav,
   .footer {
     box-shadow: none;
   }
   .nav-item {
-    padding: .2em .5em;
+    padding: 0.2em 0.5em;
   }
   .footer-nav-item span,
   .footer-sig {
-    padding: 0 .2em;
+    padding: 0 0.2em;
   }
   .footer-sig {
     transform: translateY(1em);

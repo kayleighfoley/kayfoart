@@ -39,6 +39,8 @@ html {
 body {
   font-family: var(--body-font);
   font-size: 1.6em;
+  letter-spacing: 0.05rem;
+  line-height: 1.4;
   background: var(--background-color);
 }
 a {
@@ -82,7 +84,10 @@ ul {
 .nav-item.home span {
   color: var(--white-color);
 }
-.nav-item.home:hover span {
+.nav-item.home:not(.selected):hover span {
+  text-decoration: underline;
+}
+.nav-item:not(.selected):hover span {
   text-decoration: underline;
 }
 
@@ -107,11 +112,9 @@ ul {
 .digital:hover span,
 .hello:hover span {
   color: var(--white-color);
-  text-decoration: underline;
 }
 .sketchbook:hover span {
   color: var(--black-color);
-  text-decoration: underline;
 }
 
 /* FOOTER  */
@@ -137,7 +140,7 @@ ul {
   color: var(--black-color);
 }
 
-.footer-nav-item:hover span {
+.footer-nav-item:not(.footer-selected):hover span {
   text-decoration: underline;
 }
 

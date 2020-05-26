@@ -70,6 +70,17 @@ ul {
   display: inline-block;
   padding: var(--nav-item-padding);
   color: var(--black-color);
+  position: relative;
+}
+.nav-item.home span::before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  background-color: #fff;
+  top: 25%;
+  left: 55.5%;
+  transform: skew(-20deg);
 }
 
 .nav-item:not(.selected):hover {

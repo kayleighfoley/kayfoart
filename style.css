@@ -317,6 +317,9 @@ ul {
 }
 
 @media (max-width: 450px) {
+  .heading {
+    font-size: 2em;
+  }
   .nav,
   .footer {
     box-shadow: none;

@@ -1,0 +1,12 @@
+.footer-selected {
+  background: var(--commission-color);
+}
+.footer-selected span {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.social-link-contact a {
+  background: var(--sketchbook-color);
+  color: var(--black-color);
+}

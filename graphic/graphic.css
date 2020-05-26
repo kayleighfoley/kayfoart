@@ -1,0 +1,6 @@
+.selected {
+  background: var(--graphic-color);
+}
+.selected span {
+  color: var(--white-color);
+}

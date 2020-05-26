@@ -1,0 +1,58 @@
+.footer-selected {
+  background: var(--graphic-color);
+}
+.footer-selected span {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.form-group {
+  margin: .6em 0;
+  position: relative;
+}
+.input {
+  font-family: var(--body-font);
+  font-size: 1.2em;
+  padding: 1em;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+.label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .8em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+
+  transition: .4s;
+}
+.input:focus + label,
+.input:valid + label {
+  font-size: .7em;
+  top: 4px;
+  left: 4px;
+  color: var(--commission-color);
+}
+/* .input:invalid {
+  border: 1px solid #EC4969;
+} */
+
+.submit {
+  font-family: var(--body-font);
+  background: var(--sketchbook-color);
+  color: var(--black-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .8em;
+  padding: 2em;
+  display: inline-block;
+  /* outline: none; */
+  border: none;
+  cursor: pointer;
+}
+.submit:hover {
+  font-style: italic;
+}
+

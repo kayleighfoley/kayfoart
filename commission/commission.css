@@ -1,0 +1,6 @@
+.selected {
+  background: var(--commission-color);
+}
+.selected span {
+  color: var(--white-color);
+}

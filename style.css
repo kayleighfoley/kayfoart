@@ -83,10 +83,6 @@ ul {
   transform: skew(-20deg);
 }
 
-.nav-item:not(.selected):hover {
-  font-style: italic;
-}
-
 .home {
   background: var(--black-color);
   font-weight: bold;
@@ -153,10 +149,6 @@ ul {
 
 .footer-nav-item:not(.footer-selected):hover span {
   text-decoration: underline;
-}
-
-.footer-nav-item:not(.footer-selected):hover {
-  font-style: italic;
 }
 
 .footer-sig {

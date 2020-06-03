@@ -17,8 +17,6 @@
   --hero-image-box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.4);
   --gallery-image-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.4);
   --gallery-image-hover-box-shadow: 0 1.5em 4em rgba(0, 0, 0, 0.3);
-  --nav-box-shadow: 0 1.5em 4em var(--background-color);
-  --footer-box-shadow: 0 -1.5em 4em var(--background-color);
 
   --nav-item-padding: 2rem 4rem;
   --footer-nav-item-padding: 2rem 4rem 3rem 4rem;
@@ -56,7 +54,6 @@ ul {
   position: fixed;
   top: 0;
   background: var(--background-color);
-  box-shadow: var(--nav-box-shadow);
   z-index: 1;
 }
 .nav-item {
@@ -132,7 +129,6 @@ ul {
   bottom: 0;
   background: var(--background-color);
   text-align: center;
-  box-shadow: var(--footer-box-shadow);
 }
 .footer-nav-item {
   display: inline-block;

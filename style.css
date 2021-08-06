@@ -88,12 +88,6 @@ ul {
 .nav-item.home span {
   color: var(--white-color);
 }
-.nav-item.home:not(.selected):hover span {
-  text-decoration: underline;
-}
-.nav-item:not(.selected):hover span {
-  text-decoration: underline;
-}
 
 .commission span:hover {
   background: var(--commission-color);
@@ -142,14 +136,9 @@ ul {
   padding: var(--footer-nav-item-padding);
   color: var(--black-color);
 }
-
-.footer-nav-item:not(.footer-selected):hover span {
-  text-decoration: underline;
-}
-
 .footer-sig {
   display: inline-block;
-  padding: 1em 2em;
+  padding: 0 2em;
   transform: translateY(1.2em);
 }
 .footer-image {
@@ -208,18 +197,18 @@ ul {
   flex-wrap: wrap;
 }
 .gallery-col {
-  width: 47%;
+  width: 46%;
 }
 .gallery-item {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   transition: transform 0.2s;
   box-shadow: var(--gallery-image-box-shadow);
 
   position: relative;
 }
 .gallery-item:hover {
-  transform: scale(1.1);
-  box-shadow: var(--gallery-image-hover-box-shadow);
+  /* transform: scale(1.1); */
+  /* box-shadow: var(--gallery-image-hover-box-shadow); */
 }
 .gallery-img {
   display: block;

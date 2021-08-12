@@ -1,6 +1,6 @@
 :root {
   /* FONTS */
-  --body-font: "Source Sans Pro", sans-serif;
+  --body-font: "Work Sans", "Source Sans Pro", sans-serif;
 
   /* COLORS */
   --sketchbook-color: #ffff00;
@@ -36,6 +36,7 @@ html {
 }
 body {
   font-family: var(--body-font);
+  font-weight: 300;
   font-size: 1.6em;
   letter-spacing: 0.05rem;
   line-height: 1.4;
